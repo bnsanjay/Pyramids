@@ -1,0 +1,47 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int
+main ()
+{
+  int i, j, k, l, m, n;
+  
+  // j stands for the width of the rectangle 
+  // i is used as a variable to print the first line 
+  //m is uded to nest the other loops for the left and right side 
+  //n is used to take an inputfor the height of the rectangle
+  //l is used to print the stars on both the sides 
+
+  printf ("enter the width: ");
+  scanf ("%d", &j);
+  printf ("Enter the height of the rectangle: ");
+  scanf ("%d", &n);
+
+  for (i = 1; i <= j; i++)
+    {
+      printf ("*  ");
+    }
+  printf ("\n");
+  for (m = 0; m <= n; m++)
+    {
+      for (l = 1; l <= 1; l++)
+	{
+	  printf ("*");
+	}
+      for (k = 0; k <= j - 2; k++)
+	{
+	  printf ("   ");
+	}
+
+      for (l = 1; l <= 1; l++)
+	{
+	  printf ("*\n");
+	}
+    }
+  for (i = 1; i <= j; i++)
+    {
+      printf ("*  ");
+    }
+
+  return 0;
+}
